@@ -19,7 +19,7 @@ def getBirthdayOverlapProbability(numberOfPeople):
 if __name__ == '__main__':
 	while k < 24:
 		probability = getBirthdayOverlapProbability(k)
-		percentage = probability * 100
+		percentage = round(probability * 100, 2)
 		print(f"Put {k} people in a room and the odds that there will be a common birthday is {percentage}%.")
 		k+=1
 	input()
